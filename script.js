@@ -17,24 +17,16 @@ function updateDisplays() {
   copyCountElements.innerText = copyCounting;
 }
 
-// heart buttons toggle feature
+
+//  functionality on heart buttons starts here
 var heartButtons = document.querySelectorAll('.heart-btn');
 for (var i = 0; i < heartButtons.length; i++) {
   heartButtons[i].addEventListener('click', function () {
-    var liked = this.getAttribute('data-liked') === 'true';
-    if (!liked) {
-      heartCounting = heartCounting + 1;
-      this.innerText = '❤';
-      this.setAttribute('data-liked', 'true');
-    } else {
-      
-      if (heartCounting > 0) heartCounting = heartCounting - 1;
-      this.innerText = '🤍';
-      this.setAttribute('data-liked', 'false');
-    }
+    heartCounting = heartCounting + 1; // always increase
     updateDisplays();
   });
 }
+
 
 // copy buttons functionality
 var copyButtons = document.querySelectorAll('.copy-btn');
@@ -86,7 +78,7 @@ for (var e = 0; e < callButtons.length; e++) {
     var numberText = numberElements.innerText;
 
     if (coinCounting < 20) {
-      alert('You do not have enough coins to call. You need  20 coins to call.');
+      alert('You do not have enough coins.You need  20 coins to call.');
       return;
     }
 
