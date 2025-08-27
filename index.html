@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="hind-madurai-light">
 
 
   <!-- navbar -->
@@ -22,9 +22,9 @@
       </div>
 
       <div class="nav-right">
-        <div class="pill"><span id="heartCount">0</span><img class="nav-img" src="assets/heart.png" alt=""></div>
-        <div class="pill"><span id="coinCount">100</span><img class="nav-img" src="assets/coin.png" alt=""></div>
-        <div class="pill-green"><span id="copyCount">0</span> Copy</div>
+        <div class="heart-coin"><span id="count-heart">0</span><img class="nav-img" src="assets/heart.png" alt=""></div>
+        <div class="heart-coin"><span id="count-coin">100</span><img class="nav-img" src="assets/coin.png" alt=""></div>
+        <div class="copy-green"><span id="count-copy-num">0</span> Copy</div>
       </div>
     </div>
 
@@ -196,9 +196,9 @@
       <aside class="history">
         <div class="history-header">
           <h3><i class="fa-regular fa-clock"></i> Call History</h3>
-          <button id="clearHistory" class="clear-btn">Clear</button>
+          <button id="clear-all-history" class="clear-btn">Clear</button>
         </div>
-        <ul id="historyList" class="history-list"></ul>
+        <ul id="history-part" class="history-all"></ul>
       </aside>
 
     </main>
